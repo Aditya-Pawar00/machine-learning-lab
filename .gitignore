@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+
+# Output datasets and plots generated during runs
+*.png
+*.jpg
+titanic_train_model_ready.csv
+titanic_test_model_ready.csv
+autos_price_predictions.csv
+
+# OS specific files
+.DS_Store
+Thumbs.db
