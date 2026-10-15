@@ -1,135 +1,193 @@
-# Machine Learning Laboratory (SPPU Curriculum)
+Welcome to my **Machine Learning Projects Repository**!
 
-This repository contains all **11 practical experiments** for the **Machine Learning Laboratory course (Savitribai Phule Pune University - SPPU)**.
+This repository showcases my collection of Machine Learning, Artificial Intelligence, and Data Science projects developed during my engineering journey, personal learning, and practical experimentation.
 
-Every experiment includes:
-1. **Executable Python Script (`.py`)** – Pure, modular, reproducible code that can be run directly from the command line.
-2. **Interactive Jupyter Notebook (`.ipynb`)** – Clean, step-by-step notebooks with code cells, visualizations, and outputs.
-3. **Local Datasets** – Embedded within the dataset folder and respective practical directories for offline, zero-error execution.
+The objective of this repository is to build real-world machine learning solutions, explore different algorithms, and continuously improve my skills through hands-on projects. Each project demonstrates different concepts ranging from data preprocessing to model deployment.
 
 ---
 
-## 📁 Repository Structure
+# 👨‍💻 About Me
+
+## **Aditya Pawar**
+
+🎓 B.Tech Student
+
+**Artificial Intelligence & Data Science Engineering**
+
+---
+
+## 🌟 Areas of Interest
+
+- Artificial Intelligence
+- Machine Learning
+- Data Science
+- Deep Learning
+- Computer Vision
+- Natural Language Processing
+- Predictive Analytics
+- Generative AI
+- MLOps
+- Web Development
+
+---
+
+# 🎯 Repository Objectives
+
+The main objectives of this repository are:
+
+- Learn and implement Machine Learning algorithms.
+- Build end-to-end Machine Learning projects.
+- Apply AI concepts to real-world problems.
+- Practice feature engineering and data preprocessing.
+- Improve model accuracy through experimentation.
+- Develop deployable Machine Learning applications with Streamlit.
+- Strengthen analytical and problem-solving skills.
+- Build a professional Machine Learning portfolio.
+
+---
+
+# 📂 Repository Overview
+
+This repository includes projects from different domains such as:
+
+- Classification
+- Regression
+- Clustering
+- Dimensionality Reduction
+- Ensemble Learning
+- Reinforcement Learning
+- Exploratory Data Analysis (EDA)
+- Machine Learning Web Deployment
+
+---
+
+## 📑 Projects Showcase
+
+| # | Project Name | Domain / Algorithm | Dataset | Tech Stack | Status |
+|:---:|:---|:---|:---|:---|:---:|
+| **01** | [Titanic Survival Prediction](./01_Titanic_Survival_Prediction) | Binary Classification (Random Forest) | Titanic Passenger Data | Python, Streamlit, Scikit-learn | ✅ Deployed |
+| **02** | [Breast Cancer PCA & LDA](./02_Breast_Cancer_PCA_LDA) | Dimensionality Reduction (PCA & LDA) | Breast Cancer Wisconsin | Python, Streamlit, Matplotlib | ✅ Deployed |
+| **03** | [Automobile Price Prediction](./03_Automobile_Price_Prediction) | Multiple Linear Regression | UCI Automobile | Python, Streamlit, Scikit-learn | ✅ Deployed |
+| **04** | [Auto MPG Fuel Efficiency](./04_Auto_MPG_Polynomial_Regression) | Polynomial Regression & Bias-Variance | UCI Auto MPG | Python, Streamlit, Matplotlib | ✅ Deployed |
+| **05** | [Breast Cancer Regularization](./05_Breast_Cancer_Regularization) | Regularization (Ridge L2 vs Lasso L1) | Breast Cancer Wisconsin | Python, Streamlit, Scikit-learn | ✅ Deployed |
+| **06** | [Breast Cancer Logistic Regression](./06_Breast_Cancer_Logistic_Regression) | Classification & Confusion Matrix | Breast Cancer Wisconsin | Python, Streamlit, Scikit-learn | ✅ Deployed |
+| **07** | [Iris SVM Classification](./07_Iris_SVM_Classification) | Support Vector Machines (Linear vs RBF) | Iris Dataset | Python, Streamlit, Scikit-learn | ✅ Deployed |
+| **08** | [Iris K-Means Clustering](./08_Iris_KMeans_Clustering) | Unsupervised Clustering & Elbow Method | Iris Dataset | Python, Streamlit, Matplotlib | ✅ Deployed |
+| **09** | [Two Moons DBSCAN Clustering](./09_Two_Moons_DBSCAN_Clustering) | Density-Based Clustering & Outlier Detection | Synthetic Two-Moons | Python, Streamlit, Scikit-learn | ✅ Deployed |
+| **10** | [Breast Cancer Ensemble Learning](./10_Breast_Cancer_Ensemble_Learning) | Ensemble (Random Forest & AdaBoost) | Breast Cancer Wisconsin | Python, Streamlit, Scikit-learn | ✅ Deployed |
+| **11** | [Grid World Q-Learning](./11_Grid_World_Q_Learning) | Reinforcement Learning (Q-Learning) | 4x4 Decision Grid | Python, Streamlit, NumPy | ✅ Deployed |
+
+---
+
+# 🛠️ Technologies & Tools
+
+## Programming Language
+- Python
+
+## Machine Learning & Data Science
+- Scikit-learn
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Statsmodels
+
+## Web Application & Deployment
+- Streamlit
+- HTML / CSS
+
+## Development Tools
+- VS Code
+- Jupyter Notebook
+- Google Colab
+- Git & GitHub
+
+---
+
+# ⚙️ Typical Machine Learning Workflow
 
 ```text
-machine-learning-lab-sppu/
-│
-├── datasets/                                           # Central datasets directory
-│   ├── titanic.csv                                     # Exp 01 dataset
-│   ├── autos_dataset.csv                               # Exp 03 dataset
-│   └── auto-mpg.data                                   # Exp 04 dataset
-│
-├── Experiment_01_Feature_Engineering/
-│   ├── 1_Feature_Engineering_Titanic_SPPU_Lab.ipynb
-│   ├── experiment_01_feature_engineering.py
-│   └── titanic.csv
-│
-├── Experiment_02_PCA_and_LDA/
-│   ├── 2_Dimensionality_Reduction_Using_PCA_and_LDA.ipynb
-│   └── experiment_02_pca_and_lda.py
-│
-├── Experiment_03_Multiple_Linear_Regression/
-│   ├── 3_autos_price_multiple_linear_regression.ipynb
-│   ├── experiment_03_multiple_linear_regression.py
-│   └── autos_dataset.csv
-│
-├── Experiment_04_Polynomial_Regression_Bias_Variance/
-│   ├── 4_polynomial_regression_bias_variance_sppu.ipynb
-│   ├── experiment_04_polynomial_regression.py
-│   └── auto-mpg.data
-│
-├── Experiment_05_Regularization_Ridge_and_Lasso/
-│   ├── 5_Classify_data_using_regularization_Ridge_Lasso.ipynb
-│   └── experiment_05_regularization_ridge_lasso.py
-│
-├── Experiment_06_Binary_Classification_Logistic_Regression/
-│   ├── 6_binary_classification_logistic_regression.ipynb
-│   └── experiment_06_logistic_regression.py
-│
-├── Experiment_07_SVM_Linear_vs_Nonlinear_Kernels/
-│   ├── 7_svm_linear_vs_nonlinear_kernels.ipynb
-│   └── experiment_07_svm_kernels.py
-│
-├── Experiment_08_KMeans_Clustering_Elbow_Method/
-│   ├── 8_kmeans_clustering_elbow_method.ipynb
-│   └── experiment_08_kmeans_clustering.py
-│
-├── Experiment_09_DBSCAN_Clustering_Noise_Detection/
-│   ├── 9_dbscan_clustering_noise_detection.ipynb
-│   └── experiment_09_dbscan_clustering.py
-│
-├── Experiment_10_Ensemble_Learning_Comparison/
-│   ├── 10_ensemble_learning_comparison.ipynb
-│   └── experiment_10_ensemble_learning.py
-│
-├── Experiment_11_QLearning_GridWorld/
-│   ├── 11_q_learning_grid_world.ipynb
-│   └── experiment_11_q_learning.py
-│
-├── requirements.txt                                    # Python dependencies
-├── .gitignore                                          # Git ignore configurations
-└── README.md                                           # Complete documentation
+Problem Definition
+        ↓
+Data Collection
+        ↓
+Data Cleaning & Handling Missing Values
+        ↓
+Exploratory Data Analysis (EDA)
+        ↓
+Feature Engineering & Transformation
+        ↓
+Model Selection & Training
+        ↓
+Hyperparameter Tuning & Regularization
+        ↓
+Model Evaluation & Performance Metrics
+        ↓
+Serialization (.pkl) & Streamlit Deployment
 ```
 
 ---
 
-## 📚 Complete Syllabus Index (All 11 Practicals)
+# 📊 Skills Demonstrated
 
-| Exp No. | Topic / Practical Title | Dataset Used | Techniques / Algorithms | Status |
-|:---:|:---|:---|:---|:---:|
-| **01** | **Feature Engineering** | Titanic Passenger Dataset | Imputation, One-Hot Encoding, StandardScaler, ColumnTransformer | ✅ Completed |
-| **02** | **Dimensionality Reduction** | Breast Cancer Wisconsin | PCA (95% variance & 2D), LDA (1D), Logistic Regression | ✅ Completed |
-| **03** | **Multiple Linear Regression** | UCI Automobile Price | Multiple Linear Regression, Missing Value Handling, MSE, RMSE, R2, MAE | ✅ Completed |
-| **04** | **Polynomial Regression & Bias-Variance** | UCI Auto MPG | Polynomial features (Degrees 1 to 15), Bias-Variance trade-off | ✅ Completed |
-| **05** | **Regularization (Ridge & Lasso)** | Breast Cancer Wisconsin | RidgeClassifier (L2), L1-Logistic (Lasso), Multicollinearity (VIF), K-Fold CV | ✅ Completed |
-| **06** | **Binary Classification (Logistic Regression)** | Breast Cancer Wisconsin | Logistic Regression Pipeline, Confusion Matrix, Precision, Recall, F1-Score | ✅ Completed |
-| **07** | **SVM Linear vs Nonlinear Kernels** | Iris Dataset (Setosa vs Versicolor) | Linear SVM vs RBF Kernel SVM, Evaluation Metrics | ✅ Completed |
-| **08** | **K-Means Clustering & Elbow Method** | Iris Dataset (4 features) | K-Means, WCSS / Inertia Elbow Curve, Silhouette Analysis, PCA Visualization | ✅ Completed |
-| **09** | **DBSCAN Clustering & Noise Detection** | Synthetic Two-Moons | Density-Based Clustering, Core/Border/Noise Identification, Parameter Sweep | ✅ Completed |
-| **10** | **Ensemble Learning Comparison** | Breast Cancer Wisconsin | Logistic Regression (Baseline) vs Random Forest vs AdaBoost | ✅ Completed |
-| **11** | **Reinforcement Learning (Q-Learning)** | 4x4 Grid World Environment | Tabular Q-Learning, Bellman Update, ε-Greedy Strategy, Policy Extraction | ✅ Completed |
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis & Visualization
+- Feature Engineering & Scaling Pipelines
+- Supervised & Unsupervised Machine Learning
+- Dimensionality Reduction (PCA, LDA)
+- Model Regularization (Ridge, Lasso)
+- Ensemble Methods (Bagging, Boosting)
+- Reinforcement Learning (Q-Learning)
+- Interactive Web App Deployment with Streamlit
+- Version Control (Git & GitHub)
 
 ---
 
-## 🚀 Setup & Execution
+# 📚 Learning Journey
 
-### 1. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 2. Run Any Experiment via Command Line
-Run any script directly using Python:
-```bash
-python Experiment_01_Feature_Engineering/experiment_01_feature_engineering.py
-python Experiment_02_PCA_and_LDA/experiment_02_pca_and_lda.py
-python Experiment_03_Multiple_Linear_Regression/experiment_03_multiple_linear_regression.py
-python Experiment_04_Polynomial_Regression_Bias_Variance/experiment_04_polynomial_regression.py
-python Experiment_05_Regularization_Ridge_and_Lasso/experiment_05_regularization_ridge_lasso.py
-python Experiment_06_Binary_Classification_Logistic_Regression/experiment_06_logistic_regression.py
-python Experiment_07_SVM_Linear_vs_Nonlinear_Kernels/experiment_07_svm_kernels.py
-python Experiment_08_KMeans_Clustering_Elbow_Method/experiment_08_kmeans_clustering.py
-python Experiment_09_DBSCAN_Clustering_Noise_Detection/experiment_09_dbscan_clustering.py
-python Experiment_10_Ensemble_Learning_Comparison/experiment_10_ensemble_learning.py
-python Experiment_11_QLearning_GridWorld/experiment_11_q_learning.py
-```
-
-### 3. Open in Jupyter Notebook / Lab
-```bash
-jupyter notebook
-```
-Navigate to any experiment folder and open the corresponding `.ipynb` notebook file.
+This repository reflects my continuous learning journey in Artificial Intelligence and Machine Learning. Every project helps me strengthen my understanding of algorithms, improve coding practices, and gain practical experience by solving real-world problems.
 
 ---
 
-## 📤 Step-by-Step Instructions to Push to GitHub
+# 🚀 Future Goals
 
-1. Create a new empty repository on [GitHub](https://github.com/new). Name it e.g. `machine-learning-lab-sppu`.
-2. Do **not** check "Add a README" or ".gitignore" on GitHub (this project already has them).
-3. Open PowerShell or Command Prompt, navigate to this project directory, and run:
-```bash
-cd "C:\Users\adity\.gemini\antigravity\scratch\machine-learning-lab-sppu"
-git remote add origin https://github.com/<YOUR-GITHUB-USERNAME>/machine-learning-lab-sppu.git
-git branch -M main
-git push -u origin main
-```
+I plan to expand this repository by exploring:
+- Deep Learning & Neural Networks
+- Large Language Models (LLMs) & Generative AI
+- Retrieval-Augmented Generation (RAG)
+- Autonomous AI Agents
+- Computer Vision & NLP
+- MLOps and Cloud Deployments (Docker, AWS, Hugging Face)
+
+---
+
+# 📌 Repository Highlights
+
+- Beginner to Advanced Machine Learning Projects
+- Well-Documented Code & Clean Architecture
+- Pickled Model Artifacts (`.pkl`) for Instant Inference
+- Interactive Streamlit Web Applications for every project
+- Real-World & Open-Access Datasets
+
+---
+
+# 📬 Connect With Me
+
+### GitHub
+[https://github.com/Aditya-Pawar00](https://github.com/Aditya-Pawar00)
+
+---
+
+# ⭐ Support
+
+If you find this repository helpful:
+- ⭐ Star the Repository
+- 🍴 Fork the Repository
+- 📢 Share it with fellow developers and students
+
+---
+
+> **"Learning by Building. Improving through Experimentation. Growing with Every Project."**
+
+### 🚀 Building Intelligent Solutions with Machine Learning
+**Made with ❤️ by Aditya Pawar**
