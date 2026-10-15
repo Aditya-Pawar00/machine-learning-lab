@@ -1,6 +1,11 @@
 # Machine Learning Laboratory (SPPU Curriculum)
 
-This repository contains clean, modular, and directly executable Python scripts (`.py`), interactive Jupyter Notebooks (`.ipynb`), datasets, and evaluations for the **Machine Learning Laboratory course (Savitribai Phule Pune University - SPPU)**.
+This repository contains all **11 practical experiments** for the **Machine Learning Laboratory course (Savitribai Phule Pune University - SPPU)**.
+
+Every experiment includes:
+1. **Executable Python Script (`.py`)** – Pure, modular, reproducible code that can be run directly from the command line.
+2. **Interactive Jupyter Notebook (`.ipynb`)** – Clean, step-by-step notebooks with code cells, visualizations, and outputs.
+3. **Local Datasets** – Embedded within the dataset folder and respective practical directories for offline, zero-error execution.
 
 ---
 
@@ -57,14 +62,18 @@ machine-learning-lab-sppu/
 │   ├── 10_ensemble_learning_comparison.ipynb
 │   └── experiment_10_ensemble_learning.py
 │
+├── Experiment_11_QLearning_GridWorld/
+│   ├── 11_q_learning_grid_world.ipynb
+│   └── experiment_11_q_learning.py
+│
 ├── requirements.txt                                    # Python dependencies
 ├── .gitignore                                          # Git ignore configurations
-└── README.md                                           # Documentation and instructions
+└── README.md                                           # Complete documentation
 ```
 
 ---
 
-## 📚 Experiment Index
+## 📚 Complete Syllabus Index (All 11 Practicals)
 
 | Exp No. | Topic / Practical Title | Dataset Used | Techniques / Algorithms | Status |
 |:---:|:---|:---|:---|:---:|
@@ -73,12 +82,12 @@ machine-learning-lab-sppu/
 | **03** | **Multiple Linear Regression** | UCI Automobile Price | Multiple Linear Regression, Missing Value Handling, MSE, RMSE, R2, MAE | ✅ Completed |
 | **04** | **Polynomial Regression & Bias-Variance** | UCI Auto MPG | Polynomial features (Degrees 1 to 15), Bias-Variance trade-off | ✅ Completed |
 | **05** | **Regularization (Ridge & Lasso)** | Breast Cancer Wisconsin | RidgeClassifier (L2), L1-Logistic (Lasso), Multicollinearity (VIF), K-Fold CV | ✅ Completed |
-| **06** | **Binary Classification via Logistic Regression** | Breast Cancer Wisconsin | Logistic Regression, Confusion Matrix, Precision, Recall, F1-Score | ✅ Completed |
+| **06** | **Binary Classification (Logistic Regression)** | Breast Cancer Wisconsin | Logistic Regression Pipeline, Confusion Matrix, Precision, Recall, F1-Score | ✅ Completed |
 | **07** | **SVM Linear vs Nonlinear Kernels** | Iris Dataset (Setosa vs Versicolor) | Linear SVM vs RBF Kernel SVM, Evaluation Metrics | ✅ Completed |
 | **08** | **K-Means Clustering & Elbow Method** | Iris Dataset (4 features) | K-Means, WCSS / Inertia Elbow Curve, Silhouette Analysis, PCA Visualization | ✅ Completed |
 | **09** | **DBSCAN Clustering & Noise Detection** | Synthetic Two-Moons | Density-Based Clustering, Core/Border/Noise Identification, Parameter Sweep | ✅ Completed |
 | **10** | **Ensemble Learning Comparison** | Breast Cancer Wisconsin | Logistic Regression (Baseline) vs Random Forest vs AdaBoost | ✅ Completed |
-| **11** | *Experiment 11 (Final)* | *Pending upload* | - | ⏳ Pending |
+| **11** | **Reinforcement Learning (Q-Learning)** | 4x4 Grid World Environment | Tabular Q-Learning, Bellman Update, ε-Greedy Strategy, Policy Extraction | ✅ Completed |
 
 ---
 
@@ -89,8 +98,8 @@ machine-learning-lab-sppu/
 pip install -r requirements.txt
 ```
 
-### 2. Run Python Scripts Directly
-You can run any experiment script directly:
+### 2. Run Any Experiment via Command Line
+Run any script directly using Python:
 ```bash
 python Experiment_01_Feature_Engineering/experiment_01_feature_engineering.py
 python Experiment_02_PCA_and_LDA/experiment_02_pca_and_lda.py
@@ -102,21 +111,25 @@ python Experiment_07_SVM_Linear_vs_Nonlinear_Kernels/experiment_07_svm_kernels.p
 python Experiment_08_KMeans_Clustering_Elbow_Method/experiment_08_kmeans_clustering.py
 python Experiment_09_DBSCAN_Clustering_Noise_Detection/experiment_09_dbscan_clustering.py
 python Experiment_10_Ensemble_Learning_Comparison/experiment_10_ensemble_learning.py
+python Experiment_11_QLearning_GridWorld/experiment_11_q_learning.py
 ```
 
 ### 3. Open in Jupyter Notebook / Lab
 ```bash
 jupyter notebook
 ```
+Navigate to any experiment folder and open the corresponding `.ipynb` notebook file.
 
 ---
 
-## 📤 How to Push to GitHub
+## 📤 Step-by-Step Instructions to Push to GitHub
 
-1. Create a new repository on [GitHub](https://github.com/new) (e.g. `machine-learning-lab-sppu`).
-2. Run the following commands in this directory:
+1. Create a new empty repository on [GitHub](https://github.com/new). Name it e.g. `machine-learning-lab-sppu`.
+2. Do **not** check "Add a README" or ".gitignore" on GitHub (this project already has them).
+3. Open PowerShell or Command Prompt, navigate to this project directory, and run:
 ```bash
-git remote add origin https://github.com/<YOUR-USERNAME>/machine-learning-lab-sppu.git
+cd "C:\Users\adity\.gemini\antigravity\scratch\machine-learning-lab-sppu"
+git remote add origin https://github.com/<YOUR-GITHUB-USERNAME>/machine-learning-lab-sppu.git
 git branch -M main
 git push -u origin main
 ```
